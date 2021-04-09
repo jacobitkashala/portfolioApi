@@ -1,0 +1,430 @@
+@media (min-width: 576px) {
+    h2 {
+        color: black;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    section#about {
+        padding-left: 15px;
+        padding-right: 15px;
+        div.about-title {
+            transition: all 0.4s;
+            line-height: 1;
+            padding-left: 20px;
+            h2 {
+                color: #000000;
+                font-weight: 900;
+                font-size: 3rem;
+                padding-bottom: 5px;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 1;
+                text-align: justify;
+                padding-right: 2%;
+            }
+        }
+        div.about-content {
+            padding-left: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            &:last-child {
+                margin: 0;
+                padding: 0;
+                // transition: all 0.4s;
+            }
+            h2 {
+                color: #149ddd;
+                font-weight: 900;
+                font-size: 3rem;
+            }
+            p {
+                line-height: 1;
+                text-align: justify;
+                padding-right: 2%;
+            }
+            div.content-img img.content--img {
+                width: 80%;
+                padding-left: 20px;
+                // transition: all 0.4s;
+                // width: 100px;
+            }
+            div.content-these {
+                width: 60%;
+                p {
+                    padding-left: 10px;
+                }
+                ul {
+                    list-style: url("../Image/crosshair.svg");
+                    // list-style: none;
+                    font-size: 1.2rem;
+                    margin-left: 0!important;
+                    li {
+                        padding-bottom: 10px;
+                        color: #000000;
+                        font-weight: 700;
+                        a {
+                            text-decoration: none;
+                            color: #000000;
+                            font-weight: normal;
+                        }
+                        span {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#projet {
+        width: 100%;
+        padding-left: 35px;
+        font-size: 1.3rem;
+        text-align: justify;
+        // transform: all 0.3s;
+        div.projet-titre {
+            h2 {
+                font-size: 3rem;
+                margin-top: 10px;
+                font-weight: 900;
+                // padding-left: 20px;
+            }
+        }
+        div.projet-image {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                img {
+                    width: 70px;
+                    margin-right: 20px;
+                }
+                span {
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    section#competence {
+        padding-left: 35px;
+        padding-right: 15px;
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+        h2 {
+            font-size: 3rem;
+            margin-top: 10px;
+            font-weight: 900;
+        }
+        //div.progress {
+        // display: flex;
+        // // flex-direction: row;
+        // gap: 10px;
+        // }
+    }
+    div.p {
+        width: 100px;
+        height: 20px;
+        background-color: #149ddd;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding-left: 100px;
+        border-radius: 3px;
+        span {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    section#about {
+        padding-left: 15px;
+        padding-right: 15px;
+        div.about-title {
+            transition: all 0.4s;
+            line-height: 1;
+            padding-left: 20px;
+            h2 {
+                color: #000000;
+                font-weight: 900;
+                font-size: 3rem;
+                padding-bottom: 5px;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 1;
+                text-align: justify;
+                padding-right: 2%;
+            }
+        }
+        div.about-content {
+            padding-left: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            &:last-child {
+                margin: 0;
+                padding: 0;
+                // transition: all 0.4s;
+            }
+            h2 {
+                color: #149ddd;
+                font-weight: 900;
+                font-size: 3rem;
+            }
+            p {
+                line-height: 1;
+                text-align: justify;
+                padding-right: 2%;
+            }
+            div.content-img img.content--img {
+                width: 80%;
+                padding-left: 20px;
+                // transition: all 0.4s;
+                // width: 100px;
+            }
+            div.content-these {
+                width: 60%;
+                p {
+                    padding-left: 10px;
+                }
+                ul {
+                    list-style: url("../Image/crosshair.svg");
+                    // list-style: none;
+                    font-size: 1.2rem;
+                    margin-left: 0!important;
+                    li {
+                        padding-bottom: 10px;
+                        color: #000000;
+                        font-weight: 700;
+                        a {
+                            text-decoration: none;
+                            color: #000000;
+                            font-weight: normal;
+                        }
+                        span {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#projet {
+        width: 100%;
+        padding-left: 35px;
+        font-size: 1.3rem;
+        text-align: justify;
+        // transform: all 0.3s;
+        div.projet-titre {
+            h2 {
+                font-size: 3rem;
+                margin-top: 10px;
+                font-weight: 900;
+                // padding-left: 20px;
+            }
+        }
+        div.projet-image {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                img {
+                    width: 70px;
+                    margin-right: 20px;
+                }
+                span {
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    section#competence {
+        padding-left: 35px;
+        padding-right: 15px;
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+        h2 {
+            font-size: 3rem;
+            margin-top: 10px;
+            font-weight: 900;
+        }
+        //div.progress {
+        // display: flex;
+        // // flex-direction: row;
+        // gap: 10px;
+        // }
+    }
+    div.p {
+        width: 100px;
+        height: 20px;
+        background-color: #149ddd;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding-left: 100px;
+        border-radius: 3px;
+        span {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    section#about {
+        padding-left: 15px;
+        padding-right: 15px;
+        div.about-title {
+            transition: all 0.4s;
+            line-height: 1;
+            padding-left: 20px;
+            h2 {
+                color: #000000;
+                font-weight: 900;
+                font-size: 3rem;
+                padding-bottom: 5px;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 1;
+                text-align: justify;
+                padding-right: 2%;
+            }
+        }
+        div.about-content {
+            padding-left: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            &:last-child {
+                margin: 0;
+                padding: 0;
+                // transition: all 0.4s;
+            }
+            h2 {
+                color: #149ddd;
+                font-weight: 900;
+                font-size: 3rem;
+            }
+            p {
+                line-height: 1;
+                text-align: justify;
+                padding-right: 2%;
+            }
+            div.content-img img.content--img {
+                width: 80%;
+                padding-left: 20px;
+                // transition: all 0.4s;
+                // width: 100px;
+            }
+            div.content-these {
+                width: 60%;
+                p {
+                    padding-left: 10px;
+                }
+                ul {
+                    list-style: url("../Image/crosshair.svg");
+                    // list-style: none;
+                    font-size: 1.2rem;
+                    margin-left: 0!important;
+                    li {
+                        padding-bottom: 10px;
+                        color: #000000;
+                        font-weight: 700;
+                        a {
+                            text-decoration: none;
+                            color: #000000;
+                            font-weight: normal;
+                        }
+                        span {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#projet {
+        width: 100%;
+        padding-left: 35px;
+        font-size: 1.3rem;
+        text-align: justify;
+        // transform: all 0.3s;
+        div.projet-titre {
+            h2 {
+                font-size: 3rem;
+                margin-top: 10px;
+                font-weight: 900;
+                // padding-left: 20px;
+            }
+        }
+        div.projet-image {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                img {
+                    width: 70px;
+                    margin-right: 20px;
+                }
+                span {
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    section#competence {
+        padding-left: 35px;
+        padding-right: 15px;
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+        h2 {
+            font-size: 3rem;
+            margin-top: 10px;
+            font-weight: 900;
+        }
+        //div.progress {
+        // display: flex;
+        // // flex-direction: row;
+        // gap: 10px;
+        // }
+    }
+    div.p {
+        width: 100px;
+        height: 20px;
+        background-color: #149ddd;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding-left: 100px;
+        border-radius: 3px;
+        span {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+}
+
+$small-down:"only screen and (min-width:238px)"

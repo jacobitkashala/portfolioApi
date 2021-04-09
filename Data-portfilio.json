@@ -1,0 +1,23 @@
+{
+    "user": {
+        "nickname": "jacobit",
+        "name": "kashala",
+        "adresse": {
+            "avenue": "kama",
+            "quartier": "molo",
+            "numero": 3
+        },
+        "ville": "kinshasa",
+        "pays": "RDC",
+        "mails": ["jacobitkashala@gmail.com",
+            ""
+        ],
+        "competence": {
+            "html": 90,
+            "Cs": 90,
+            "Java": 90,
+            "Css": 90
+        }
+    }
+
+}
