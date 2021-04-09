@@ -1,17 +1,13 @@
-let closed = document.getElementById("closedId");
-let check = document.getElementById("checkId");
-let btn = document.getElementById("btnid")
+const ulrData = "https://jacobitkashala.github.io/Data-portfilio.json";
 
-// console.dir(check);
-// console.dir(btn);
+let userNom = document.getElementById("Nom");
+// console.log(userNom);
 
-// check.onclick = function() {
-//         closed.style.visibility = "visible";
-//         check.style.visibility = "hidden";
+fetch(ulrData)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(dbase => {
 
-//         console.dir(closed.style);
-//     }
-// closed.onclick = function() {
-//     console.log("la clo");
-
-// }
+        console.log(dbase.name);
+    })
