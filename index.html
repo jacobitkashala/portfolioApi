@@ -10,7 +10,7 @@
     ===========-->
     <link rel="icon" href="Image/spiderman_new_100px.png">
 
-    <title> Portfilio Jacobit Kashala</title>
+    <title>Jacobit Kashala</title>
     <!-- font google 
     =================-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -40,26 +40,27 @@
                     </h1>
                     <div class="social-links mt-3 tex-center">
                         <a href="#" class="twittter bx"><img class="bx1-twitter" src="Image/twitter.svg" alt="Image twitter"> </a>
-                        <a href="https://web.facebook.com/jacob.kashala" class="bx1-facebook"><img class="bx bx1-twitter" src="Image/facebook.png" alt="Image facebook"> </a>
-                        <a href="#" class="linkendin bx"><img class="bx1-twitter" src="Image/linkedin.svg" alt="Image linkend"> </a>
+                        <a href="https://github.com/jacobitkashala" class="bx1-facebook"><img class="bx bx1-twitter" src="Image/github-brands.svg" alt="Image github.com"> </a>
+                        <a href="https://web.facebook.com/jacob.kashala" class="bx1-facebook"><img class="bx bx1-twitter" src="Image/facebook-f-brands.svg" alt="Image facebook"> </a>
+                        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" class="bx1-facebook"><img class="bx bx1-twitter" src="Image/linkedin-in-brands.svg" alt="Image linkedin"> </a>
                     </div>
                     <!-- Navigation menu -->
                     <nav class="nav-menu">
                         <ul>
-                            <li class="active">
-                                <a href="index.html"><img class="bx bx-home active" src="Image/homeinterfacebuttonsymbolforweb_87800.svg" alt="Image home"> Accueil</a>
+                            <li class="">
+                                <a class="active" href="index.html"><img class="bx bx-home active" src="Image/homeinterfacebuttonsymbolforweb_87800.svg" alt="Image home"> Accueil</a>
+                            </li>
+                            <li >
+                                <a  class="active" href="#about"><img class="bx bx-user" src="Image/man-userBlack.svg" alt="Image apropos"> A propos</a>
                             </li>
                             <li>
-                                <a href="#about"><img class="bx bx-user" src="Image/man-userBlack.svg" alt="Image apropos"> A propos</a>
+                                <a class="active" href="#projet"><img class="bx bx-file" src="Image/24-hours.svg" alt="Image projet">projet </a>
                             </li>
                             <li>
-                                <a href="#projet"><img class="bx bx-file" src="Image/24-hours.svg" alt="Image projet">projet </a>
+                                <a class="active" href="#competence"><img class="bx bx-cv" src="Image/setting.svg" alt="Image competence">Competence</a>
                             </li>
                             <li>
-                                <a href="#competence"><img class="bx bx-cv" src="Image/setting.svg" alt="Image competence">Competence</a>
-                            </li>
-                            <li>
-                                <a href="#contact"><img class="bx bx-user" src="Image/contact-book.svg" alt="Image contact">Contact </a>
+                                <a class="active" href="#contact"><img class="bx bx-user" src="Image/contact-book.svg" alt="Image contact">Contact </a>
                             </li>
                         </ul>
                     </nav>
@@ -231,8 +232,8 @@
                     <h2>Contact</h2>
                     <form action="#" class="">
                         <div class="row">
-                            <input type="text" name="name" class="col-sm-4" placeholder="Nom" id="username">
-                            <input type="text" name="name" class="col-sm-4" placeholder="Prenom" id="userfirstnom">
+                            <input type="text" name="name" class="col-sm-2" placeholder="Nom" id="username">
+                            <input type="text" name="name" class="col-sm-2" placeholder="Prenom" id="userfirstnom">
                         </div>
                         <div class="row">
                             <input class="col-sm-8" type="email" name="name" placeholder="Email" id="usermail">
@@ -252,6 +253,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- jquery 
+    =============-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+    $(document).on('click','ul li>a',()=>{
+        $(this).addClass('active').removeClass('active')
+    })
+    </script>
     <!-- MDB 
     =========-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>

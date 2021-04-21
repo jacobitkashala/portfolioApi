@@ -54,3 +54,26 @@ window.addEventListener('scroll', () => {
 
 //         // console.log(dbase.name);
 //     })
+
+//Scroll
+
+// var options = {
+//     root: document.querySelector('#scrollArea'),
+//     rootMargin: '0px',
+//     threshold: 1.0
+//   }
+  
+// var observer = new IntersectionObserver(callback, options);
+
+var options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+  }
+
+const selectedTitre=()=>{
+    console.log("on scrolle")
+}
+  
+var observer = new IntersectionObserver(selectedTitre, options);
+observer.observe(document.querySelector('.active'))
