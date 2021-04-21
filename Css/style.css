@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif; }
 
 section.head {
   width: 100%;
@@ -74,6 +75,9 @@ nav.nav-menu ul {
       nav.nav-menu ul li a:hover {
         text-decoration: none;
         list-style: none; }
+      nav.nav-menu ul li a:active {
+        color: #fff;
+        font-size: 30px; }
       nav.nav-menu ul li a img {
         width: 40px;
         height: 40px;
@@ -81,26 +85,24 @@ nav.nav-menu ul {
 
 /*section entete*/
 div#hero {
-  width: 100%;
+  width: 71%;
   height: 70vh;
   font-size: 2rem;
   margin-left: 28%;
-  background: url("../Image/hero_3.jpg") top no-repeat;
+  background: url("../Image/hero_3.jpg") no-repeat;
   background-size: cover; }
-  div#hero div.hero-container {
-    color: #2c2f3f; }
-  div#hero h1 {
-    font-size: 6.5rem;
+  div#hero div.hero-container h1 {
+    font-size: 4.5rem;
     color: #fff;
     font-weight: 900;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 8%;
     margin-bottom: 3%;
     font-family: "Poppins", sans-serif; }
-  div#hero p {
+  div#hero div.hero-container p {
     color: #2c2f3f;
     letter-spacing: 1px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 20px; }
 
 div.navbar {
@@ -130,43 +132,6 @@ h6 {
   font-family: 'Raleway', sans-serif;
   font-size: 2rem; }
 
-@media (max-width: 1199px) {
-  header {
-    left: -500px; }
-
-  button.navbar-toggler {
-    position: fixed;
-    right: 0px;
-    top: 10px;
-    left: 15px;
-    z-index: 1000;
-    border: 0px;
-    background: none;
-    font-size: 24px;
-    transition: all 0.4s;
-    outline: none !important;
-    line-height: 1;
-    cursor: pointer;
-    text-align: right; }
-
-  div.nav-bar img.nav--closed {
-    width: 45px;
-    height: 45px;
-    visibility: visible; }
-    div.nav-bar img.nav--closed:hover {
-      cursor: pointer; } }
-/*Responsive*/
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed; } }
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px; } }
-@media (min-width: 249px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px; } }
 main#main {
   width: 71%;
   margin-left: 28%;
@@ -181,7 +146,8 @@ section#about {
       color: #000000;
       font-weight: 900;
       font-size: 3rem;
-      padding-bottom: 5px; }
+      padding-bottom: 5px;
+      margin-top: 0px !important; }
     section#about div.about-title p {
       font-size: 1.5rem;
       line-height: 1;
@@ -206,8 +172,8 @@ section#about {
         font-weight: 600;
         font-size: 3rem;
         line-height: 1;
-        text-align: justify;
-        padding-right: 2%; }
+        text-align: left;
+        margin-top: 0px !important; }
       section#about div.about-content div.content-these p {
         padding-left: 10px; }
       section#about div.about-content div.content-these ul {
@@ -234,6 +200,12 @@ section#projet {
     font-size: 3rem;
     margin-top: 10px;
     font-weight: 900; }
+  section#projet div.projet-image-realiser {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    section#projet div.projet-image-realiser div.col-sm-5 > img.imag--projet {
+      width: 35%; }
   section#projet div.projet-image {
     width: 100%;
     display: flex;
@@ -328,5 +300,208 @@ section#contact {
   section#contact div.contact button {
     border: none;
     width: 20%; }
+
+@media (max-width: 1199px) {
+  * {
+    box-sizing: border-box !important;
+    margin-left: 0;
+    width: 100%; }
+
+  header {
+    left: -500px; }
+
+  div#hero {
+    width: 100%;
+    margin-left: 0; }
+    div#hero p {
+      width: 100%;
+      margin-left: 0; }
+
+  main#main {
+    width: 100%;
+    margin-left: 0; }
+    main#main section#about {
+      margin-right: 0; }
+      main#main section#about div.content-these h2 {
+        text-align: left !important; }
+    main#main section#projet {
+      padding-left: 15px;
+      margin: 0;
+      text-align: left; }
+    main#main section#competence {
+      padding-right: 0;
+      padding-left: 15px; }
+    main#main section {
+      padding-left: 0; }
+      main#main section div.contact h2 {
+        padding-left: 0; } }
+@media (max-width: 768px) {
+  main#main {
+    width: 90%;
+    margin-left: 25px; }
+
+  div#hero {
+    width: 100%;
+    height: 70vh;
+    margin-left: 0; }
+    div#hero div.hero-container h1 {
+      font-size: 4.5rem;
+      color: #fff;
+      font-weight: 900;
+      margin-top: 20%; }
+    div#hero div.hero-container p {
+      font-size: 3.25rem;
+      margin-left: 20px; }
+
+  section#about div.about-title h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 5px; }
+  section#about div.about-title p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-right: 2%; }
+  section#about div.about-content {
+    padding-left: 10px;
+    width: 100%;
+    display: block;
+    font-size: 1.3rem; }
+    section#about div.about-content div.content-img {
+      width: 70%; }
+      section#about div.about-content div.content-img div.img.content--img {
+        width: 30%;
+        padding-left: 015px; }
+    section#about div.about-content div.content-these {
+      margin-top: 5%;
+      width: 90%; }
+      section#about div.about-content div.content-these h2 {
+        color: #149ddd;
+        font-weight: 900;
+        font-size: 2.5rem;
+        line-height: 1;
+        text-align: left;
+        padding-right: 2%; }
+
+  section#projet {
+    padding-left: 0px;
+    font-size: 1.3rem;
+    text-align: left;
+    transform: all 0.3s; }
+    section#projet div.projet-titre h2 {
+      font-size: 3rem;
+      margin-top: 10px;
+      font-weight: 900;
+      padding-left: 0px; }
+    section#projet div.projet-image {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      section#projet div.projet-image div img {
+        width: 70px;
+        padding-right: 20px; }
+      section#projet div.projet-image div span {
+        text-align: left;
+        font-size: 1rem; }
+
+  section#contact {
+    width: 100%;
+    margin: auto;
+    font-size: 1.5rem;
+    padding-left: 35px;
+    padding-right: 15px; }
+    section#contact div.contact h2 {
+      font-size: 3rem;
+      margin-top: 10px;
+      font-weight: 900;
+      padding: 0px 0px 0px 15px;
+      color: #000; }
+    section#contact div.contact button {
+      border: none;
+      width: 30%; } }
+@media (max-width: 411px) {
+  main#main {
+    width: 100%;
+    margin-left: 15px; }
+
+  div#hero {
+    width: 100%;
+    height: 70vh;
+    margin-left: 0; }
+    div#hero div.hero-container h1 {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 500;
+      margin-top: 10%; }
+    div#hero div.hero-container p {
+      font-size: 0.25rem;
+      margin-left: 20px; }
+
+  section#about div.about-title h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 5px; }
+  section#about div.about-title p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-right: 2%; }
+  section#about div.about-content {
+    padding-left: 10px;
+    width: 100%;
+    display: block;
+    font-size: 1.3rem; }
+    section#about div.about-content div.content-img {
+      width: 70%; }
+      section#about div.about-content div.content-img div.img.content--img {
+        width: 30%;
+        padding-left: 015px; }
+    section#about div.about-content div.content-these {
+      margin-top: 5%;
+      width: 90%; }
+      section#about div.about-content div.content-these h2 {
+        color: #149ddd;
+        font-weight: 900;
+        font-size: 2.5rem;
+        line-height: 1;
+        text-align: left;
+        padding-right: 2%; }
+
+  section#projet {
+    padding-left: 0px;
+    font-size: 1.3rem;
+    text-align: left;
+    transform: all 0.3s; }
+    section#projet div.projet-titre h2 {
+      font-size: 3rem;
+      margin-top: 10px;
+      font-weight: 900;
+      padding-left: 0px; }
+    section#projet div.projet-image {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      section#projet div.projet-image div img {
+        width: 70px;
+        padding-right: 20px; }
+      section#projet div.projet-image div span {
+        text-align: left;
+        font-size: 1rem; }
+
+  section#contact {
+    width: 100%;
+    margin: auto;
+    font-size: 1.5rem;
+    padding-left: 35px;
+    padding-right: 15px; }
+    section#contact div.contact h2 {
+      font-size: 3rem;
+      margin-top: 10px;
+      font-weight: 900;
+      padding: 0px 0px 0px 15px;
+      color: #000; }
+    section#contact div.contact button {
+      border: none;
+      width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
