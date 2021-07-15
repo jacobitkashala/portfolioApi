@@ -3,8 +3,7 @@
   font-family: montserrat, sans-serif; }
 
 section.head {
-  width: 100%;
-  display: flex;
+  margin-top: 0;
   flex-direction: row; }
 
 header {
@@ -19,8 +18,8 @@ header {
   padding: 0 9px;
   overflow-y: auto; }
   header div.profile img.avatar {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border: 8px solid #2c2f3f;
     margin: 20px 20px; }
   header div.profile h1.text-light {
@@ -28,7 +27,7 @@ header {
     padding: 0;
     font-weight: 600;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-decoration: none; }
     header div.profile h1.text-light a {
       text-decoration: none;
@@ -44,24 +43,29 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
     background-color: #212431; }
-    header div.profile div.social-links a img.bx {
-      border-radius: 50%;
-      border: 3px solid #2c2f3f;
-      margin: 10px 10px;
-      font-size: 18px;
-      width: 80px;
-      height: 80px; }
-      header div.profile div.social-links a img.bx:hover {
-        border-color: #149ddd;
-        color: #fff; }
+    header div.profile div.social-links a {
+      margin-top: auto; }
+      header div.profile div.social-links a .bx {
+        border-radius: 50%;
+        border: 3px solid #2c2f3f;
+        background-color: #2c2f3f;
+        color: #fff;
+        margin: 20px 10px; }
+        header div.profile div.social-links a .bx:hover {
+          border-color: #149ddd;
+          color: #fff; }
 
 nav.nav-menu ul {
   list-style: none; }
   nav.nav-menu ul li {
     position: relative;
     white-space: nowrap; }
+    nav.nav-menu ul li.active {
+      color: red;
+      font-size: 30px;
+      transition: width 0.3s;
+      padding-bottom: 4px; }
     nav.nav-menu ul li:hover {
       text-decoration: none; }
     nav.nav-menu ul li a {
@@ -83,20 +87,27 @@ nav.nav-menu ul {
         height: 40px;
         margin: 03px 10px; }
 
+ul li.active a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 30px;
+  transition: width 0.3s;
+  padding-bottom: 4px; }
+
 /*section entete*/
 div#hero {
-  width: 71%;
   height: 70vh;
   font-size: 2rem;
-  margin-left: 28%;
-  background: url("../Image/hero_3.jpg") no-repeat;
-  background-size: cover; }
+  background: url("../Image/hero_3.jpg") no-repeat; }
   div#hero div.hero-container h1 {
+    margin-top: 0;
     font-size: 4.5rem;
     color: #fff;
     font-weight: 900;
     text-align: center;
-    margin-top: 8%;
     margin-bottom: 3%;
     font-family: "Poppins", sans-serif; }
   div#hero div.hero-container p {
@@ -129,21 +140,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem; }
 
 main#main {
-  width: 71%;
-  margin-left: 28%;
+  width: 70%;
+  margin-left: 27%;
   color: #000000; }
 
 section#about {
-  padding-left: 25px; }
+  width: 100%;
+  background-color: #f4f7ff;
+  padding-left: 3%; }
   section#about div.about-title {
     transition: all 0.4s;
     line-height: 1; }
     section#about div.about-title h2 {
-      color: #000000;
+      color: #000;
       font-weight: 900;
       font-size: 3rem;
       padding-bottom: 5px;
@@ -155,7 +168,6 @@ section#about {
       padding-right: 2%; }
   section#about div.about-content {
     padding-left: 10px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -182,11 +194,11 @@ section#about {
         margin-left: 0 !important; }
         section#about div.about-content div.content-these ul li {
           padding-bottom: 10px;
-          color: #000000;
+          color: #000;
           font-weight: 700; }
           section#about div.about-content div.content-these ul li a {
             text-decoration: none;
-            color: #000000;
+            color: #000;
             font-weight: normal; }
           section#about div.about-content div.content-these ul li span {
             font-weight: normal; }
@@ -261,6 +273,16 @@ section#service {
     margin-top: 10px;
     font-weight: 900; }
 
+.input-name {
+  border: 1px #0084e6 solid;
+  border-radius: 10px;
+  padding: 15px;
+  outline: none; }
+
+input {
+  color: #000;
+  margin: 5px 5px !important; }
+
 .icon-11 {
   width: 40px;
   height: 30px;
@@ -279,27 +301,24 @@ section#contact {
     font-weight: 900;
     padding: 0px 0px 0px 15px;
     color: #000; }
-  section#contact div.contact input,
   section#contact div.contact label,
   section#contact div.contact textarea,
   section#contact div.contact button {
     display: block;
-    width: 90%;
-    /* height: 50%; */
     padding: 5px 0px 5px 10px;
-    margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
-    color: #fff;
-    border: none;
+    margin-top: 20px;
+    color: #000;
     border: 1px #0084e6 solid;
     font-size: 2rem;
     outline: none;
-    border-radius: 10px;
-    margin-top: 20px; }
+    border-radius: 10px; }
   section#contact div.contact button {
     border: none;
-    width: 20%; }
+    width: 20%;
+    background-color: #0084e6;
+    color: #000; }
 
 @media (max-width: 1199px) {
   * {
