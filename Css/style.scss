@@ -1,7 +1,9 @@
 @import "responsive.scss";
 * {
   box-sizing: border-box;
-  font-family: montserrat, sans-serif;
+  font-family: "montserrat", sans-serif;
+  //font-family: 'Roboto', sans-serif;
+
 }
 
 section.head {
@@ -134,6 +136,7 @@ ul li.active a {
 
 div#hero {
   // width: 100%;
+  width: 98%;
   height: 70vh;
   font-size: 2rem;
   background: url("../Image/hero_3.jpg") no-repeat ;
@@ -142,15 +145,16 @@ div#hero {
   div.hero-container {
 
     h1 {
+      font-family: 'Roboto', sans-serif;
       margin-top: 0;
       font-size: 4.5rem;
       color: #fff;
       font-weight: 900;
       text-align: center;
       margin-bottom: 3%;
-      font-family: "Poppins", sans-serif;
+      
     }
-    p { 
+    p { text-align: center;
       color: #2c2f3f;
       letter-spacing: 1px;
       font-size: 2.5rem;
@@ -320,7 +324,7 @@ section#competence {
   font-size: 1.3rem;
   text-align: justify;
   h2 {
-    font-size: 3rem;
+    // font-size: 3rem;
     margin-top: 10px;
     font-weight: 900;
   }
@@ -342,6 +346,7 @@ div.p {
   margin-bottom: 20px;
   margin-left: 20px;
   padding-left: 100px;
+  // text-align: justify;
   border-radius: 3px;
   span {
     padding-left: 100px;
@@ -621,8 +626,8 @@ section#contact {
       }
       p {
         font-size: 1.5rem;
-        text-align: justify;
-        padding-right: 2%;
+        // text-align: justify;
+        // padding-right: 2%;
       }
     }
     div.about-content {
