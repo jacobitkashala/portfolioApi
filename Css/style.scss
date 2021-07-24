@@ -33,13 +33,14 @@ header {
     h1.text-light {
       margin: 0;
       padding: 0;
+    
       font-weight: 600;
       text-align: center;
       font-family: "Poppins", sans-serif;
       text-decoration: none;
       a {
         text-decoration: none;
-        font-size: 30px;
+        font-size: 2rem;
         line-height: 1;
         padding: 5px 0px;
         color: #fff !important;
@@ -88,7 +89,7 @@ nav.nav-menu {
       white-space: nowrap;
       &.active {
         color: red;
-        font-size: 30px;
+        font-size: 2rem;
         transition: width 0.3s;
         padding-bottom: 4px;
       }
@@ -102,14 +103,14 @@ nav.nav-menu {
         padding: 5px;
         text-decoration: none;
         transition: 0.3s;
-        font-size: 18px;
+        font-size: 1rem;
         &:hover {
           text-decoration: none;
           list-style: none;
         }
         &:active {
           color: #fff;
-          font-size: 30px;
+          font-size: 1rem;
         }
         img {
           width: 40px;
@@ -123,11 +124,10 @@ nav.nav-menu {
 
 ul li.active a {
   color: #fff;
-  font-size: 30px;
+  font-size: 2rem;
   text-decoration: none;
   list-style: none;
   color: #fff;
-  font-size: 30px;
   transition: width 0.3s;
   padding-bottom: 4px;
 }
@@ -140,8 +140,6 @@ div#hero {
   height: 70vh;
   font-size: 2rem;
   background: url("../Image/hero_3.jpg") no-repeat ;
-  // margin-top: 0;
-
   div.hero-container {
 
     h1 {
@@ -175,7 +173,7 @@ nav.nav-menu ul li a:hover,
 nav.na-menu .active > a,
 nav.nav-menu:hover {
   color: #fff;
-  font-size: 30px;
+  font-size: 1rem;
   text-decoration: none;
   list-style: none;
 }
@@ -324,7 +322,6 @@ section#competence {
   font-size: 1.3rem;
   text-align: justify;
   h2 {
-    // font-size: 3rem;
     margin-top: 10px;
     font-weight: 900;
   }
@@ -494,8 +491,6 @@ section#contact {
         margin-top: 20%;
       }
       p {
-        // color: #149ddd;
-        // letter-spacing: 1px;
         font-size: 3.25rem;
         margin-left: 20px;
       }
@@ -610,8 +605,6 @@ section#contact {
         margin-top: 10%;
       }
       p {
-        // color: #149ddd;
-        // letter-spacing: 1px;
         font-size: 0.25rem;
         margin-left: 20px;
       }
@@ -626,8 +619,7 @@ section#contact {
       }
       p {
         font-size: 1.5rem;
-        // text-align: justify;
-        // padding-right: 2%;
+        
       }
     }
     div.about-content {
