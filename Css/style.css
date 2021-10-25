@@ -99,6 +99,9 @@ ul li.active a {
 
 /*section entete*/
 div#hero {
+  height: 100vh;
+  font-size: 2rem;
+  margin-left: 1%;
   height: 70vh;
   font-size: 2rem;
   background: url("../Image/hero_3.jpg") no-repeat; }
@@ -145,7 +148,7 @@ h6 {
 
 main#main {
   width: 70%;
-  margin-left: 27%;
+  margin-left: 25%;
   text-align: center;
   color: #000000; }
 
