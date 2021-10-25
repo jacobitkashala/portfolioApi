@@ -372,9 +372,9 @@ section#contact {
       color: #fff;
       font-weight: 900;
       margin-top: 20%; }
-    div#hero div.hero-container p {
-      font-size: 3.25rem;
-      margin-left: 20px; }
+    div#hero div.hero-container h2 {
+      text-align: center;
+      padding-top: 50%; }
 
   section#about div.about-title h2 {
     font-weight: 600;
