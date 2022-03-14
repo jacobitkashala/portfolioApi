@@ -1637,7 +1637,7 @@ header .logo a {
 
 #resume .timeline-header {
 	float: left;
-	width: 35%;
+	width: 40%;
 	padding-right: 90px;
 	text-align: right;
 }
@@ -1645,6 +1645,11 @@ header .logo a {
 	margin-bottom: 0;
 }
 #resume .timeline-header p {
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.6rem;
+	color: #888888;
+}
+#resume .timeline-header ul {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
 	color: #888888;
