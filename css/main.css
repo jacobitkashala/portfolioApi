@@ -1649,6 +1649,11 @@ header .logo a {
 	font-size: 1.6rem;
 	color: #888888;
 }
+#resume .timeline-header p > span .txt{
+	font-weight: bold;
+	color: #000000;
+}
+
 #resume .timeline-header ul {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
