@@ -53,14 +53,14 @@
 }
 
 /* fix */
-.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+/* .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
-}
+} */
 
 /* 
  *  Owl Carousel CSS3 Transitions 
@@ -369,7 +369,7 @@
 	z-index: 1043;
 	position: fixed;
 	outline: none !important;
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backfacge-visibility: hidden; */
 }
 .mfp-container {
 	text-align: center;
